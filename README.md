@@ -1,4 +1,5 @@
- ## Thoughts
+
+ ## Thoughts
 
 This was a interesting project, I got to play around with SCSS as usually I use style components. It was a little mind shift.
 
