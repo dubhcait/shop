@@ -1,23 +1,21 @@
-# Octopus Front End Test
+## Thoughts:
 
-This example project was pinched from a
+This was a interesting project, I got to play around with SCSS as usually I use style components. It was a little mind shift.
+
+One interesting blocker I came across was with react-router-dom and clearing the history between tests. I found a hacky way to do it but wish I had more time to flesh this out and do in a neater way rather than directly manipulating the window.
+
+There was still lots left on my mental to do list but one thing I really wish I got to do was mocking out the response for the python server for the tests.
+
+---
+
+This example project was built on the work of
 [graphene-django example app](https://github.com/graphql-python/graphene-django/tree/master/server/app).
-and [Create React App](https://create-react-app.dev/docs/getting-started/).  
+and [Create React App](https://create-react-app.dev/docs/getting-started/).
+
 The project contains two apps - a django app named `products` and a react app
 named `shop`.
 
-In this code test, you'll be asked to:
-
-- Make a simple React app that follows the design in AppDesignMobile.png, consumes the API and
-  makes the front end tests pass. Ideally the app should be responsive.
-
-We've included a sample create react app project for your convenience, but you're welcome to swap
-it out for another framework if you prefer. You're also welcome to write more tests for other
-parts of the application - but design those however you like.
-
 ## Getting started
-
-We assume you have access to a unix environment - if this poses a real problem please let us know.
 
 First you'll need to install your dependencies
 
@@ -89,14 +87,4 @@ cd octopus/client
 yarn test
 ```
 
-Press `a` to run all the tests. This should give you two failures:
-
-```bash
- FAIL  src/App.test.js
-  ✕ should be able to increase and decrease product quantity
-  ✕ should be able to add items to the basket
-```
-
-So the task is to make a client that passes these tests :)
-
-Best of luck!
+Press `a` to run all the tests.
