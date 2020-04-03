@@ -8,8 +8,8 @@ named `shop`.
 
 In this code test, you'll be asked to:
 
--   Make a simple React app that follows the design in AppDesignMobile.png, consumes the API and
-    makes the front end tests pass. Ideally the app should be responsive.
+- Make a simple React app that follows the design in AppDesignMobile.png, consumes the API and
+  makes the front end tests pass. Ideally the app should be responsive.
 
 We've included a sample create react app project for your convenience, but you're welcome to swap
 it out for another framework if you prefer. You're also welcome to write more tests for other
@@ -57,8 +57,7 @@ Now you should be ready to start the server:
 ./manage.py runserver 8000
 ```
 
-Here is the [query to run to get you started](http://127.0.0.1:8000/graphql#operationName=getProductById&query=query%20getProductById%20%7B%0A%20%20product(productId%3A%201)%20%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20power%0A%20%20%20%20description%0A%20%20%20%20price%0A%20%20%20%20quantity%0A%20%20%20%20brand%0A%20%20%20%20weight%0A%20%20%20%20height%0A%20%20%20%20width%0A%20%20%20%20length%0A%20%20%20%20modelCode%0A%20%20%20%20colour%0A%20%20%20%20imgUrl%0A%20%20%7D%0A%7D%0A)
-
+Here is the [query to run to get you started](<http://127.0.0.1:8000/graphql#operationName=getProductById&query=query%20getProductById%20%7B%0A%20%20product(productId%3A%201)%20%7B%0A%20%20%20%20id%0A%20%20%20%20name%0A%20%20%20%20power%0A%20%20%20%20description%0A%20%20%20%20price%0A%20%20%20%20quantity%0A%20%20%20%20brand%0A%20%20%20%20weight%0A%20%20%20%20height%0A%20%20%20%20width%0A%20%20%20%20length%0A%20%20%20%20modelCode%0A%20%20%20%20colour%0A%20%20%20%20imgUrl%0A%20%20%7D%0A%7D%0A>)
 
 Once you have your server running, you're ready to install the front end dependencies
 
@@ -68,6 +67,12 @@ cd octopus/client
 
 # install dependencies
 yarn
+
+## if running this on a Mac
+run yarn install --force or yarn add node-sass
+
+The is a issue with the node bindings for node-sass
+![](https://i.imgur.com/SEhDqhj.png)
 
 # start the server
 yarn start
